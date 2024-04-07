@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Jim+Nightshade&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+:root {
+    --cor-a: #f3ffff;
+    --cor-b: #FC7A1E;
+    --cor-c: #463F3A;
+    --cor-d: #03045E;
+    --cor-e: #AAC4A8;
+    --cor-f: #DCE8E8;
+    --cor-g: #2B9720;
+
+    --fonte-primaria: "Iceberg", san-serif;
+    --fonte-secundaria: "Truculenta", san-serif;
+    --fonte-terciaria: "Jim Nightshade", san-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--cor-a);
+    height: 100vh;
+}
+
+.tela {
+    background: var(--cor-a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 15%;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-self: space-between;
+    gap: 40px;
+    flex-direction: row;
+    margin:auto;
+}
+
+.container-quadro {
+    padding: 10px 5px ;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-self: space-between;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.container-quadro-titulo {
+    color: var(--cor-b);
+    font-size: 2.5rem;
+    font-family: var(--fonte-primaria);
+}
+
+.container-quadro-regras {
+    color: var(--cor-c);
+    font-family: var(--fonte-secundaria);
+}
+
+.container-quadro-digitavel {
+    width: 80vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+}
+
+.container-quadro-digitavel-input {
+    width: 100%;
+    height: 80vh;
+    border: none;
+    border-radius: 15px;
+    color: var(--cor-b);
+    padding: 1rem;
+    font-size: 20px;
+    background-color: white;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    
+}
+
+.info {
+    margin-left: 15px;
+}
+
+.mensagem-erro ul::before {
+    content: url(/img/icone.png);
+    width: 16px;
+    height: 17px;
+    vertical-align: middle;
+}
+
+.mensagem-erro ul {
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    width: 30rem;
+    height: auto;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 30px 0;
+}
+
+.botoes-c {
+    width: 100%;
+    padding: 8px 5px;
+    color: var(--cor-d);
+    border: none;
+    box-shadow: 1px 4px 4px 0 var(--cor-e);
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    background-color: var(--cor-b);
+}
+
+.botoes-d {
+    width: 100%;
+    padding: 8px 5px;
+    color: var(--cor-d);
+    border: none;
+    box-shadow: 1px 4px 4px 0 var(--cor-e);
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    background-color: var(--cor-b);
+}
+
+.botoes-v {
+    width: 100%;
+    padding: 8px 5px;
+    color: var(--cor-d);
+    border: none;
+    box-shadow: 1px 4px 4px 0 var(--cor-e);
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    background-color: var(--cor-b);
+}
+
+.container-quadro-resultado {
+    width: 50vh;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 4px 4px 0 var(--cor-f), 0 6px 20px 0 var(--cor-f);
+    padding: 5%;
+    text-align: center;
+    gap: 10px;
+}
+
+.container-quadro-resultado-imagem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+    gap: 10px;
+    padding: auto;
+}
+
+.container-quadro-resultado-mensagem {
+   padding: 10px;
+   width: 317px;
+   height: 335px;
+   border: none;
+   display: flex;
+   position: relative;
+   align-items: center;
+   text-align: justify;
+   font-family: var(--fonte-terciaria);
+   color: var(--cor-g);
+   font-family: var(--fonte-secundaria);
+   font-size: 24px;
+}
+
+.container-quadro-regras {
+    color: var(--cor-c);
+}
+
+.rodape {
+    background-color: var(--cor-d);
+
+}
